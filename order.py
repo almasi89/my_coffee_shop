@@ -29,3 +29,11 @@ class Order:
     def coffee(self):
         return self._coffee
 
+almasi = Customer("jobuu")
+latte = Coffee ("latte")
+price = 6.6
+order1 = Order (almasi , latte, price)
+
+print(order1.customer.name)
+print(order1.coffee.name)
+print (order1.price)

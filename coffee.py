@@ -10,4 +10,13 @@ class Coffee:
     def name(self):
         return self._name
     
+    def orders(self):
+        return self._orders
+
+    def customers(self):
+        return list({order.customer for order in self._orders})
     
+    def num_orders(self):
+        return len(self._orders)
+
+  

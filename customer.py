@@ -12,6 +12,13 @@ class Customer:
             self._name = val
         else:
             raise ValueError("Name must be a string btwn 1 and 15 characters")
+    def coffees(self):
+        return {order.coffee for order in self._orders}   
+   
+    def orders(self):
+        return self._orders
+    
+   
 
 almasi = Customer("almasi")
 print (almasi.name)
