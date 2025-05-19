@@ -1,0 +1,13 @@
+class Coffee:
+    def __init__(self,name):
+        if isinstance (name, str) and 3 <= len(name) :
+            self._name = name
+        else:
+            raise ValueError("coffee name must be a string of 3 char")
+        self._orders = []
+
+    @property
+    def name(self):
+        return self._name
+    
+    
