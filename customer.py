@@ -18,6 +18,10 @@ class Customer:
     def orders(self):
         return self._orders
     
+    def create_order(self, coffee, price):
+        from order import Order
+        return Order(self, coffee, price) 
+    
    
 
 almasi = Customer("almasi")
